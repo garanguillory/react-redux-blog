@@ -4,11 +4,12 @@ import {Route, IndexRoute} from 'react-router';
 	// to define a match between a url and a component
 import App from './components/app';
 import PostsIndex from './components/posts_index';
-
+import PostsNew from './components/posts_new';
 
 export default (
 		// whenever the user is at this path "/" show this component 
 	<Route path="/" component={App}>
 		<IndexRoute component={PostsIndex} />
+		<Route path="posts/new" component={PostsNew} />
 	</Route>
 );
