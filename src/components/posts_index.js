@@ -24,13 +24,13 @@ class PostsIndex extends Component {
 
 	render(){
 		return (
-			<div>
-					<h3>Posts</h3>
+			<div className="blog-list">
+					<h3>All Blog Posts</h3>
 					<ul className="list-group">
 						{this.renderPosts()}
 					</ul>
 					<div>
-						<Link to="/posts/new" className="btn btn-primary pull-xs-right" style={{marginTop: "1em"}}>
+						<Link to="/posts/new" className="btn btn-success pull-xs-right" style={{marginTop: "1em"}}>
 							Add a Post
 						</Link>
 					</div>

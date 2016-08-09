@@ -1,2 +1,13 @@
 form a {
   margin: 5px; }
+
+.blog-list {
+  margin-top: 2rem; }
+
+.blog-individual {
+  margin-top: 2rem; }
+
+.back {
+  position: absolute;
+  top: 0.01em;
+  left: 1em; }
