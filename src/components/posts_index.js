@@ -51,3 +51,5 @@ function mapStateToProps(state){
 // export default connect(null, mapDispatchToProps)(PostsIndex);
 
 export default connect(mapStateToProps, {fetchPosts: fetchPosts})(PostsIndex);
+
+
