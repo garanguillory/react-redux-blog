@@ -12,7 +12,7 @@ class PostsNew extends Component {
 		this.props.createPost(props)
 			.then(() => { // <-- called after a blog post is successfully created
 				// blog post has been created, navigate the user back to the index
-				// We navigate by calling this.context.router.push with the 
+				// Navigate by calling this.context.router.push with the 
 				// new path to navigate to. 
 				this.context.router.push('/');
 			});
@@ -21,9 +21,13 @@ class PostsNew extends Component {
 	render(){
 		const { fields: {title, categories, content}, handleSubmit} = this.props;
 		// const handleSubmit = this.props.handleSubmit;
+		// console.log('title: ', title);
+		// console.log('content: ', content);
 
 		return (
-			<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+			<form onSubmit={handleSubmit(this.onSubmit.bind(this))} className="blog-new">
+				<Link to="/" className="back">Back</Link>
+
 				<h3>Create a New Post</h3>
 				<div className={`form-group ${title.touched && title.invalid ? 'has-danger' : ''}`}>
 					<label>Title</label>
